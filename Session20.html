@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Foodies</title>
+    </head>
+    <style>
+
+        body {
+            font-family: Tahoma;
+            background-image: url('./background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            border-bottom: whitesmoke 2px solid;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .logo img{
+            height: 50px;
+            margin-left: 20px;
+            
+        }
+
+        .links {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 7px;
+            transition: 200ms ease-in;
+        }
+
+        a:hover {
+         color: white;
+           
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .favDishes {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .favDishes img {
+            width: 400px;
+            height: 300px;
+            border: 10px solid black;
+            opacity: 0.5;
+        }
+
+        .favDishes img:hover {
+            opacity:1;
+        }
+
+        #hero-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            border-bottom: 2px solid white;
+        }
+
+        .right img {
+            border: 5px dashed black;
+        }
+
+        .left {
+            margin-top: 75px;
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.671);
+            text-align: center;
+            height: 70px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            border: 5px dotted black;
+        }
+    </style>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./food-512.png">
+            </div>
+            <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            </div>
+        </div>
+
+        <div id="hero-section">
+            <div class="left">
+                <h2>Welcome to Foodies</h2>
+                <p>In this website we will provide you with delicious dishes from all over the world.<br> We are a team of people who will serve you food till the end. <br>Always Come to Us if you want to eat Delicious Food.</p>
+            </div>
+            <div class="right">
+                <img src="./heroimage.jpg">
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2>Favourite Dishes</h2>
+        </div>
+        <div class="favDishes">
+            <img src="./pizza.gif">
+            <img src="./tandoor.jpg">
+            <img src="./burger.jpg">
+        </div>
+        <div class="info">
+            <h1 style="color: white;">For More Infomation on the benefits of Food. Take a look at the website below: </h1>
+            <iframe src="https://en.wikipedia.org/wiki/Food" width="100%" height="700px"></iframe>
+        </div>
+        <div class="footer">
+            <h3>Foodies &#128513</h3>
+        </div>
+    </body>
+</html>
