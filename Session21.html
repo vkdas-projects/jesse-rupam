@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Session 21</title>
+    </head>
+    <body>
+        <h1>Canvas</h1>
+        <canvas id="myCanvas" style="border: 3px solid black;" width="600px" height="600px"></canvas>
+    
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var can = canvas.getContext('2d');
+       
+        can.moveTo(10,0);
+        can.lineTo(10,200);
+        can.stroke();
+        
+        can.strokeStyle="blue";
+        
+        can.moveTo(10,200)
+        can.lineTo(200,200);
+        can.stroke();
+
+        can.lineWidth="5";
+
+        can.moveTo( 10,0);
+        can.lineTo(200,0);
+        can.stroke();
+
+        can.moveTo(200,0)
+        can.lineTo(200,200);
+        can.stroke();
+
+        can.strokeStyle="red";
+        
+        can.strokeRect(100,100,200,300);
+
+        can.strokeStyle="green";
+
+        can.strokeRect(200,200,200,300);
+
+        can.fillRect(400,400,300,300);
+        can.lineWidth="1";
+
+        can.strokeStyle="orange";
+        can.font = "24px Arial";
+        can.strokeText("Hello CodeYoung Students", 275, 50);
+
+    </script>
+    </body>
+</html>
+
