@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Web Storage API</title>
+        <style>
+            body {
+                text-align: center;
+                background-color: orangered;
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Storage API</h1>
+        <h2>Local Storage</h2>
+        <h2>Session Storage</h2>
+        <button onclick="counter()">Click Me(Local Storage)</button>
+        <button onclick="counter2()">Click Me(Session Storage)</button>
+        <h3 id="count"></h3>
+        <h3 id="count2"></h3>
+        <h3 id="name"></h3>
+    <script>
+        function counter(){
+            if(typeof(Storage) !== "undefined")
+            {
+                if(localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                   
+                }
+                else {
+                    localStorage.clickcount = 1;
+                }
+             var a = document.getElementById('count');
+             a.innerHTML = "The button has been clicked " + localStorage.clickcount + " times";
+            
+            }
+            else 
+            {
+                var b = document.getElementById('count');
+                b.innerHTML = "The browser does not support Web Storage";
+            }
+        }
+
+        function counter2(){
+            if(typeof(Storage) !== "undefined")
+            {
+                if(sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                }
+                else {
+                    sessionStorage.clickcount = 1;
+                }
+             var a = document.getElementById('count2');
+             a.innerHTML = "The button has been clicked " + sessionStorage.clickcount + " times";
+            }
+            else 
+            {
+                var b = document.getElementById('count2');
+                b.innerHTML = "The browser does not support Web Storage";
+            }
+        }
+
+    </script>
+    </body>
+</html>
