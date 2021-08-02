@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Session 30</title>
+        <style>
+            body{
+                background-color: coral;
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Data Types</h1>
+        <p id="showData"></p>
+        <p id="showDataType"></p>
+        <input type="button" onclick="showData()" value="Show Data">
+        <input type="button" onclick="showDataType()" value="Show Data Type">
+    </body>
+    <script>
+        var data1 = "Jesse Daniel";
+        var data2 = 5;
+        var data3 = true;
+        function showData(){
+            var show = document.getElementById('showData');
+            show.innerHTML = data1+ " , " +data2+ " , " +data3;
+        }
+        function showDataType()
+        {
+            var showD = document.getElementById('showDataType');
+            showD.innerHTML = "The Word Jesse is of the Data Type "+ typeof(data1) +
+                            ". The Number 5 is of the Data Type  "+ typeof(data2) +
+                            ". The value True is of the Data Type "+ typeof(data3);
+        }
+    </script>
+</html>

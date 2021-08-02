@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Session 31</title>
+        <style>
+            body{
+                background-color: crimson;
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Data Types</h1>
+        <p id="showData"></p>
+        <p id="showDataType"></p>
+        <input type="button" onclick="showData()" value="Show Data">
+        <input type="button" onclick="showDataType()" value="Show Data Type">
+        <input type="button" onclick="showArray()" value="Show Array">
+    </body>
+    <script>
+        var data1 = "Jesse Daniel";
+        var data2 = 5;
+        var data3 = true;
+        var data4 = [5,6]
+        function showData(){
+            var show = document.getElementById('showData');
+            show.innerHTML = data1+ " , " +data2+ " , " +data3;
+        }
+        function showDataType()
+        {
+            var showD = document.getElementById('showDataType');
+            showD.innerHTML = "The Word Jesse is of the Data Type "+ typeof(data1) +
+                            ". The Number 5 is of the Data Type  "+ typeof(data2) +
+                            ". The value True is of the Data Type "+ typeof(data3);
+        }
+        function showArray(){
+            var showA =  document.getElementById('showData');
+            showA.innerHTML = data4;
+        }
+    </script>
+</html>
